@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "DECommerce.Interfaces": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:57124;http://localhost:57126"
+    }
+  }
+}

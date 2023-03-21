@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "DECommerce.Interfaces/1.0.0": {
+        "dependencies": {
+          "DECommerce.Models": "1.0.0"
+        },
+        "runtime": {
+          "DECommerce.Interfaces.dll": {}
+        }
+      },
+      "DECommerce.Models/1.0.0": {
+        "runtime": {
+          "DECommerce.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DECommerce.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DECommerce.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
