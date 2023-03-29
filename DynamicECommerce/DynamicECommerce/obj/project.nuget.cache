@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DVoDqG2rSGwuPPhFWJrLFZhbxY6FOw+xoQ6xfONVg+vPVLXMA+CPw+ez4n2xnm9MY7w9euchpqxCLqLLLUAaGw==",
+  "dgSpecHash": "qOXwm+AIbmen0ZdsY6LBsDaW3teZtemhmjhOblWR6J2gAVLAVoYEDDzukVARTwzcipY74li6tCEZHaof2H1cqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\Desktop\\DynamicECommerce\\DynamicECommerce\\DynamicECommerce.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DynamicECommerce\\DynamicECommerce.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

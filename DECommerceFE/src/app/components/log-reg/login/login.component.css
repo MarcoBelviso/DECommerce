@@ -24,3 +24,7 @@
     border-color: var(--primary-color);
     color: rgb(9, 27, 127);
   }
+
+.eye{
+  right: 1%;
+}

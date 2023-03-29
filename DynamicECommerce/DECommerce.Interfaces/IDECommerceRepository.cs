@@ -43,6 +43,7 @@ namespace DECommerce.Interfaces
         bool CreateProductCategories(ProductCategories productCategories);
         List<ProductCategories> GetProductCategories();
         bool DeleteProductCategories(int ProductCategoriesID);
+        ProductCategories GetProductsCategoriesbyId(int ProductCategoriesID);
 
         //Orders
 

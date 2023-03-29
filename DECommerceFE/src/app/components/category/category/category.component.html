@@ -1,0 +1,50 @@
+<form>
+  <section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-12 col-lg-9 col-xl-7">
+          <div
+            class="card shadow-2-strong card-registration"
+            style="border-radius: 15px">
+            <div class="pt-5 " style="padding-left: 7% ;" routerLink="/admin/:id">
+              <svg xmlns="http://www.w3.org/2000/svg"   width="23" height="23" fill="currentColor" class="omh-svg" style="color :rgb(35, 13, 112);" viewBox="0 0 16 16">
+                <path class="omh-path" fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+              </svg>
+          </div>
+            <div class="card-body p-4 p-md-5 ">
+              <h1 class="mb-4 pb-2 pb-md-0 mb-md-5">Categories Creation Form</h1>
+
+              <form >
+                <div >
+                  <div class="row ">
+                    <div class="col-md-6 mb-5">
+                      <div class="form-outline" >
+                        <input
+                          type="text"
+                          id="field1"
+                          placeholder="Category Name"
+                          [(ngModel)]="field1"
+                          [ngModelOptions]="{ standalone: true }"
+                          class="form-control form-control-lg"/>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<div class="row">
+                <div class="mt-4 pt-2 d-flex justify-content-between">
+                  <button class="btn" (click)="onAddCategory()">
+                    Add Category
+                  </button>
+                    <button class="btn btn text-end">Add product &raquo;</button>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</form>

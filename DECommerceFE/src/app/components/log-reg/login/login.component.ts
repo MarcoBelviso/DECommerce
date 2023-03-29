@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import {  ActivatedRoute, Route, Router, RouterLink } from '@angular/router';
+import { Observable } from 'rxjs';
 
 import { AuthService } from 'src/app/services/auth.service';
 import { DecommerceApiService } from 'src/app/services/decommerce-api.service';
 import { UserService } from 'src/app/services/user.service';
+import { NavbarComponent } from '../../navbar/navbar/navbar.component';
 
 
 
@@ -19,7 +21,9 @@ export class LoginComponent implements OnInit {
 
   loginForm : FormGroup
 
-  constructor(private AuthService : AuthService, private router:Router, private DEC : DecommerceApiService, private route:ActivatedRoute) { }
+  constructor(private AuthService : AuthService, private router:Router, private DEC : DecommerceApiService, private route:ActivatedRoute, private nav : NavbarComponent,
+    private service: DecommerceApiService) { }
+
 
 
 
@@ -29,11 +33,11 @@ export class LoginComponent implements OnInit {
     .subscribe(
       (response) => {
         this.AuthService.setRole(response.roleId); console.log(response.roleId)
-        this.AuthService.setToken(response.jwtToken); console.log(response.jwtToken)
-        this.DEC.getUserId(response.userId); console.log(response.userId);
+        this.AuthService.setToken(response.token); console.log(response.token)
+        this.DEC.getUserId(response.id); console.log(response.id);
 
 
-        const userId = response.userId
+        const userId = response.id
         const role = response.roleId;
         if (role == '1') {
           this.router.navigate([`/admin/${userId}`]);
@@ -45,6 +49,7 @@ export class LoginComponent implements OnInit {
     );
 
   }
+
 
   initForm(){
     this.loginForm = new FormGroup ({
@@ -66,9 +71,16 @@ export class LoginComponent implements OnInit {
     this.showPassword = !this.showPassword;
   }
 
+  toggleLogin(){
+    this.nav.isLogged = !this.nav.isLogged
+    this.nav.admin = !this.nav.admin
+    this.nav.customer = !this.nav.customer
 
+  }
 
-
+  onClick(){
+    this.nav.admin = true
+  }
 
 
 

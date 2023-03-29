@@ -62,7 +62,6 @@ namespace DynamicECommerce.Controllers
 
             return result;
         }
-        [Authorize(Roles="1")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Users>>> Get()
         {
@@ -86,7 +85,6 @@ namespace DynamicECommerce.Controllers
             return result;
         }
 
-        [Authorize]
         [HttpGet("UserID{ID}")]
         public async Task<ActionResult<IEnumerable<Users>>> GetUserId(int UserID)
         {
@@ -106,7 +104,6 @@ namespace DynamicECommerce.Controllers
             return result;
         }
 
-        [Authorize (Roles="2")]
         [HttpDelete("{UserID}")]
         public async Task<ActionResult<Users>> DeleteUsers(int UserID)
         {

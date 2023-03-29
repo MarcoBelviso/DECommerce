@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DynamicECommerce.Controllers
 {
-    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class OrdersController : ControllerBase
@@ -49,7 +48,6 @@ namespace DynamicECommerce.Controllers
             return result;
         }
 
-        [Authorize(Roles="1")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProductCategories>>> Get()
         {

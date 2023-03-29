@@ -5,6 +5,7 @@ using DECommerce.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.AspNetCore.Http.Features;
 
 var builder = WebApplication.CreateBuilder(args);
 // add IDECommerceRepository
@@ -21,6 +22,14 @@ builder.Services.AddCors(options =>
             .AllowAnyHeader();
         });
 });
+
+builder.Services.Configure<FormOptions>(options =>
+{
+    options.ValueLengthLimit = int.MaxValue;
+    options.MultipartBodyLengthLimit = int.MaxValue;
+    options.MemoryBufferThreshold = int.MaxValue;
+});
+
 
 // Add services to the container.
 builder.Services.AddDbContext<DECommerceDb>();

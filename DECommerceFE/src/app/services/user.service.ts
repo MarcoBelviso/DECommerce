@@ -11,8 +11,4 @@ export class UserService {
   constructor(private httpclient: HttpClient, private AuthService: AuthService, private DEC : DecommerceApiService) { }
 
 
-
-
-
-
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\Desktop\\DynamicECommerce\\DECommerce.Repository\\DECommerce.Repository.csproj": {}
+    "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Repository\\DECommerce.Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\Desktop\\DynamicECommerce\\DECommerce.Interfaces\\DECommerce.Interfaces.csproj": {
+    "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Interfaces\\DECommerce.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\DynamicECommerce\\DECommerce.Interfaces\\DECommerce.Interfaces.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Interfaces\\DECommerce.Interfaces.csproj",
         "projectName": "DECommerce.Interfaces",
-        "projectPath": "C:\\Users\\admin\\Desktop\\DynamicECommerce\\DECommerce.Interfaces\\DECommerce.Interfaces.csproj",
+        "projectPath": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Interfaces\\DECommerce.Interfaces.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Desktop\\DynamicECommerce\\DECommerce.Interfaces\\obj\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\admin\\Desktop\\DynamicECommerce\\DECommerce.Models\\DECommerce.Models.csproj": {
-                "projectPath": "C:\\Users\\admin\\Desktop\\DynamicECommerce\\DECommerce.Models\\DECommerce.Models.csproj"
+              "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Models\\DECommerce.Models.csproj": {
+                "projectPath": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Models\\DECommerce.Models.csproj"
               }
             }
           }
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\admin\\Desktop\\DynamicECommerce\\DECommerce.Models\\DECommerce.Models.csproj": {
+    "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Models\\DECommerce.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\DynamicECommerce\\DECommerce.Models\\DECommerce.Models.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Models\\DECommerce.Models.csproj",
         "projectName": "DECommerce.Models",
-        "projectPath": "C:\\Users\\admin\\Desktop\\DynamicECommerce\\DECommerce.Models\\DECommerce.Models.csproj",
+        "projectPath": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Models\\DECommerce.Models.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Desktop\\DynamicECommerce\\DECommerce.Models\\obj\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -118,14 +118,14 @@
         }
       }
     },
-    "C:\\Users\\admin\\Desktop\\DynamicECommerce\\DECommerce.Repository\\DECommerce.Repository.csproj": {
+    "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Repository\\DECommerce.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\DynamicECommerce\\DECommerce.Repository\\DECommerce.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Repository\\DECommerce.Repository.csproj",
         "projectName": "DECommerce.Repository",
-        "projectPath": "C:\\Users\\admin\\Desktop\\DynamicECommerce\\DECommerce.Repository\\DECommerce.Repository.csproj",
+        "projectPath": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Repository\\DECommerce.Repository.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Desktop\\DynamicECommerce\\DECommerce.Repository\\obj\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -142,11 +142,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\admin\\Desktop\\DynamicECommerce\\DECommerce.Interfaces\\DECommerce.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\admin\\Desktop\\DynamicECommerce\\DECommerce.Interfaces\\DECommerce.Interfaces.csproj"
+              "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Interfaces\\DECommerce.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Interfaces\\DECommerce.Interfaces.csproj"
               },
-              "C:\\Users\\admin\\Desktop\\DynamicECommerce\\DECommerce.Models\\DECommerce.Models.csproj": {
-                "projectPath": "C:\\Users\\admin\\Desktop\\DynamicECommerce\\DECommerce.Models\\DECommerce.Models.csproj"
+              "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Models\\DECommerce.Models.csproj": {
+                "projectPath": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Models\\DECommerce.Models.csproj"
               }
             }
           }

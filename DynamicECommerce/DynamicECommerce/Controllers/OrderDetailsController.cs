@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DynamicECommerce.Controllers
 {
-    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class OrderDetailsController : ControllerBase

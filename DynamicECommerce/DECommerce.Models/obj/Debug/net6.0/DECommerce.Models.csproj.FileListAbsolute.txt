@@ -22,3 +22,15 @@ C:\Users\admin\Desktop\DynamicECommerce\DECommerce.Models\obj\Debug\net6.0\DECom
 C:\Users\admin\Desktop\DynamicECommerce\DECommerce.Models\obj\Debug\net6.0\refint\DECommerce.Models.dll
 C:\Users\admin\Desktop\DynamicECommerce\DECommerce.Models\obj\Debug\net6.0\DECommerce.Models.pdb
 C:\Users\admin\Desktop\DynamicECommerce\DECommerce.Models\obj\Debug\net6.0\ref\DECommerce.Models.dll
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\DECommerce.Models\bin\Debug\net6.0\DECommerce.Models.deps.json
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\DECommerce.Models\bin\Debug\net6.0\DECommerce.Models.dll
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\DECommerce.Models\bin\Debug\net6.0\DECommerce.Models.pdb
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\DECommerce.Models\obj\Debug\net6.0\DECommerce.Models.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\DECommerce.Models\obj\Debug\net6.0\DECommerce.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\DECommerce.Models\obj\Debug\net6.0\DECommerce.Models.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\DECommerce.Models\obj\Debug\net6.0\DECommerce.Models.AssemblyInfo.cs
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\DECommerce.Models\obj\Debug\net6.0\DECommerce.Models.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\DECommerce.Models\obj\Debug\net6.0\DECommerce.Models.dll
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\DECommerce.Models\obj\Debug\net6.0\refint\DECommerce.Models.dll
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\DECommerce.Models\obj\Debug\net6.0\DECommerce.Models.pdb
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\DECommerce.Models\obj\Debug\net6.0\ref\DECommerce.Models.dll

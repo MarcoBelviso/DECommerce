@@ -4,40 +4,51 @@ import { Router } from '@angular/router';
 import { map, Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DecommerceApiService {
+  readonly DECommerceApiUrl = 'https://localhost:7065/api';
 
-  readonly DECommerceApiUrl = "https://localhost:7065/api"
+  constructor(private http: HttpClient, private router: Router) {}
 
-  constructor(private http : HttpClient, private router : Router) { }
-
-  addUsers(user : any){
+  addUsers(user: any) {
     return this.http.post(this.DECommerceApiUrl + '/users', user);
   }
 
-  getUserId(id:number|string){
-    return this.http.get(this.DECommerceApiUrl + `/users/${id}`).pipe(
-      map((response: any) => {
-        const userId = response.userId;
-        if(response.roleId == '2'){
-        this.router.navigate(['/customer', userId]);
-      } else {
-        this.router.navigate(['/admin', userId]);
-      }
-        return id;
-      })
-    );;
+  getUserId(id: number | string) {
+    return this.http.get(this.DECommerceApiUrl + `/users/${id}`);
+  }
 
+  CreateProducts(data: any) {
+    return this.http.post(this.DECommerceApiUrl + '/products', data);
+  }
 
+  uploadImage(image: string): Observable<Response> {
+    const formData = new FormData();
 
-  // getUserInfo(token: string): Observable<any> {
-  //   const headers = new HttpHeaders({
-  //   'Authorization': 'Bearer ' + token
-  //   });
-  //   return this.http.get<any>(this.DECommerceApiUrl + '/auth/login', {headers: headers });
-  //   }
+     formData.append('image/*', image);
 
+    return this.http.post<Response>(this.DECommerceApiUrl +'/products', formData);
+  }
+
+  getProducts():Observable<any[]> {
+    return this.http.get<any>(this.DECommerceApiUrl + '/products');
+  }
+
+  getProduct(id:string): Observable<any>{
+    return this.http.get(this.DECommerceApiUrl + `/products/${id}`);
+  }
+
+  getProductById(productId:any): Observable<any[]>{
+    return this.http.get<any>(this.DECommerceApiUrl + `/products/${productId}`);
+  }
+
+  createCategory(data : any): Observable<any>{
+    return this.http.post(this.DECommerceApiUrl + '/productCategories', data);
+  }
+
+  getCategory():Observable<any>{
+    return this.http.get(this.DECommerceApiUrl + '/productCategories');
   }
 
 }

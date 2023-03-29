@@ -1,5 +1,6 @@
 ﻿using DECommerce.Interfaces;
 using DECommerce.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -20,14 +21,17 @@ namespace DECommerce.Repository
             _model = new DECommerceDb(_configuration.GetSection("ConnectionStrings:DynamicECommerce").Value);
         }
 
-        //--------------------Users---------------------//
+        //--------------------Users---------------------//ù
+
         bool IDECommerceRepository.CreateUsers(Users users)
         {
-            bool results = false;
+            bool result = false;
+
 
             _model.Users.Add(users);
-            results = _model.SaveChanges() > 0;
-            return results;
+            result = _model.SaveChanges() > 0;
+
+            return result;
         }
 
         List<Users> IDECommerceRepository.GetUsers()
@@ -106,13 +110,15 @@ namespace DECommerce.Repository
 
         ////-------------------------Products---------------------------//
 
-        bool IDECommerceRepository.CreateProducts(Products products)
+        bool IDECommerceRepository.CreateProducts(Products product)
         {
-            bool results = false;
+            bool result = false;
 
-            _model.Products.Add(products);
-            results = _model.SaveChanges() > 0;
-            return results;
+
+            _model.Products.Add(product);
+            result = _model.SaveChanges() > 0;
+
+            return result;
         }
 
         List<Products> IDECommerceRepository.GetProducts()
@@ -148,15 +154,20 @@ namespace DECommerce.Repository
             return products;
         }
 
+
+
+
         //----------------------------ProductCategories--------------------------------//
 
         bool IDECommerceRepository.CreateProductCategories(ProductCategories productCategories)
         {
-            bool results = false;
+            bool result = false;
+
 
             _model.ProductCategories.Add(productCategories);
-            results = _model.SaveChanges() > 0;
-            return results;
+            result = _model.SaveChanges() > 0;
+
+            return result;
         }
 
         List<ProductCategories> IDECommerceRepository.GetProductCategories()
@@ -175,6 +186,12 @@ namespace DECommerce.Repository
             _model.Remove(productCategories);
             result = _model.SaveChanges() > 0;
             return result;
+        }
+
+        public ProductCategories GetProductsCategoriesbyId(int ProductsCategoriesID)
+        {
+            ProductCategories productCategories = _model.ProductCategories.FirstOrDefault(x => x.ProductCategoriesID == ProductsCategoriesID);
+            return productCategories;
         }
 
         //------------------------------Orders-----------------------------//

@@ -1,5 +1,6 @@
 ﻿using DECommerce.Interfaces;
 using DECommerce.Models;
+using DECommerce.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -16,7 +17,7 @@ namespace DynamicECommerce.Controllers
         {
             _idecommerceRepository = idecommerceRepository;
         }
-        [Authorize(Roles="1")]
+        
         [HttpPost]
         public async Task<ActionResult<ProductCategories>> CreateProductCategories(ProductCategories productCategories)
         {
@@ -48,7 +49,6 @@ namespace DynamicECommerce.Controllers
             return result;
         }
 
-        [Authorize(Roles="1")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProductCategories>>> Get()
         {
@@ -99,5 +99,28 @@ namespace DynamicECommerce.Controllers
 
             return result;
         }
+
+
+        [HttpGet("ProductCategories{ID}")]
+        public async Task<ActionResult<IEnumerable<ProductCategories>>> GetProductsCategoriesbyId(int ProductCategoriesID)
+        {
+            ProductCategories ProductCategories = new ProductCategories();
+            ActionResult result = null;
+            try
+            {
+                ProductCategories = _idecommerceRepository.GetProductsCategoriesbyId(ProductCategoriesID);
+                result = Ok(ProductCategories);
+
+            }
+            catch (Exception ex)
+            {
+                result = StatusCode(StatusCodes.Status500InternalServerError,
+                    $"Error while getting BankAccounts {ex.Message}");
+            }
+
+            return result;
+        }
     }
+
+
 }

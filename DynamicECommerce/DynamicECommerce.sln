@@ -13,6 +13,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DECommerce.Interfaces", "DE
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DECommerce.Configuration.Repository", "Configuration.Repository\DECommerce.Configuration.Repository.csproj", "{5FCDE5B2-DCBB-48E8-873A-E550FB738ACC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wwwroot", "wwwroot", "{6F853E50-D6DA-4DB8-BDC0-1F434160B145}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Uploads", "Uploads", "{F3A8EE58-96BB-40B7-8A0F-E92625748257}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{EC41683F-A290-4267-82F7-4F488B09028D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{FC28424C-7842-48CD-8869-09512787313F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +50,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F3A8EE58-96BB-40B7-8A0F-E92625748257} = {6F853E50-D6DA-4DB8-BDC0-1F434160B145}
+		{EC41683F-A290-4267-82F7-4F488B09028D} = {F3A8EE58-96BB-40B7-8A0F-E92625748257}
+		{FC28424C-7842-48CD-8869-09512787313F} = {F3A8EE58-96BB-40B7-8A0F-E92625748257}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C664408B-2B4B-4305-9BCA-8D68D6DD0D29}

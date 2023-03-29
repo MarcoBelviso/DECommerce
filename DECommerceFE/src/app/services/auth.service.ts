@@ -35,6 +35,8 @@ export class AuthService {
   login(username : string, password : string): Observable<any> {
     const data = {username : username, password : password}
     return this.http.post(this.DECommerceApiService.DECommerceApiUrl + '/Auth/login' , data)
+
+
   }
 
 
@@ -42,6 +44,10 @@ export class AuthService {
 
   public isLoggedIn(){
     return this.getRole() && this.getToken()
+  }
+
+  public logOut(){
+    return localStorage.clear();
   }
 
 

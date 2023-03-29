@@ -23,7 +23,7 @@ export class RegisterComponent implements OnInit {
   username:string="";
   password:string="";
   birthdate:Date | undefined;
-  homeform : FormGroup
+  // homeform : FormGroup
 
 
 

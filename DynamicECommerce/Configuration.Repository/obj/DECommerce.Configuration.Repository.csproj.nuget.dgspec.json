@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\Desktop\\DynamicECommerce\\Configuration.Repository\\DECommerce.Configuration.Repository.csproj": {}
+    "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\Configuration.Repository\\DECommerce.Configuration.Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\Desktop\\DynamicECommerce\\Configuration.Repository\\DECommerce.Configuration.Repository.csproj": {
+    "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\Configuration.Repository\\DECommerce.Configuration.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\DynamicECommerce\\Configuration.Repository\\DECommerce.Configuration.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\Configuration.Repository\\DECommerce.Configuration.Repository.csproj",
         "projectName": "DECommerce.Configuration.Repository",
-        "projectPath": "C:\\Users\\admin\\Desktop\\DynamicECommerce\\Configuration.Repository\\DECommerce.Configuration.Repository.csproj",
+        "projectPath": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\Configuration.Repository\\DECommerce.Configuration.Repository.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Desktop\\DynamicECommerce\\Configuration.Repository\\obj\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\Configuration.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
