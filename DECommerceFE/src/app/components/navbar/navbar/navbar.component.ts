@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
+import { DecommerceApiService } from 'src/app/services/decommerce-api.service';
+import { LoginComponent } from '../../log-reg/login/login.component';
 import { AdminComponent } from '../../users/admin/admin.component';
 import { CustomerComponent } from '../../users/customer/customer.component';
 
@@ -10,36 +14,30 @@ import { CustomerComponent } from '../../users/customer/customer.component';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private AuthService : AuthService) { }
-
-  admin : boolean
-  customer: boolean
+  constructor(private AuthService : AuthService, private userService:DecommerceApiService, private route:ActivatedRoute,public userAuthService: AuthService) { }
 
 
-  isLogged : boolean
 
+  id:string
 
   ngOnInit(): void {
+    this.id =this.AuthService.getUser();
+    this.AuthService.setUser(this.id)
+
+
+  }
+
+  isAuthenticated(){
+    return this.AuthService.isLoggedIn()
   }
 
 
   onLogOut(){
     this.AuthService.logOut();
-    this.isLogged = false
-
-    var roleId = this.AuthService.getRole()
-
-    if(this.admin == roleId && roleId == '1'){
-      return false
-    }
-     else if (this.customer == roleId && roleId == '2'){
-       return true
-     }
-    return
   }
 
-onClick(){
-  this.customer = false
-}
+
+
+
 
 }

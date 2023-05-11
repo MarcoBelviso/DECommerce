@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DECommerce.Configuration.Models\DECommerce.Configuration.Models.csproj" />
     <ProjectReference Include="..\DECommerce.Interfaces\DECommerce.Interfaces.csproj" />
     <ProjectReference Include="..\DECommerce.Models\DECommerce.Models.csproj" />
     <ProjectReference Include="..\DECommerce.Repository\DECommerce.Repository.csproj" />

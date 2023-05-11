@@ -1,84 +1,118 @@
-  <section class="vh-100 gradient-custom">
-    <div class="container py-5 h-100">
-      <div class="row justify-content-center align-items-center h-100">
-        <div class="col-12 col-lg-9 col-xl-7">
-          <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
-            <!-- <div class="pt-5 " style="padding-left: 7% ;" routerLink="/admin/:id">
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-12 col-lg-9 col-xl-7">
+        <div
+          class="card shadow-2-strong card-registration"
+          style="border-radius: 15px">
 
-          </div> -->
-            <div class="card-body p-4 p-md-5">
-              <h1 class="mb-4 pb-2 pb-md-0 mb-md-5">  <svg xmlns="http://www.w1.org/2000/svg"   width="23" height="23" fill="currentColor" class="omh-svg" style="color :rgb(35, 13, 112);" viewBox="0 0 16 16">
-                <path class="omh-path" fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
-              </svg> Product Creation Form</h1>
-              <form [formGroup]="addProductForm">
-<div>
+          <div class="card-body p-4 p-md-5">
+            <h1 class="mb-4 pb-2 pb-md-0 mb-md-5">
+              <svg
+                routerLink="/admin/:id"
+                xmlns="http://www.w1.org/2000/svg"
+                width="23"
+                height="23"
+                fill="currentColor"
+                class="omh-svg"
+                style="color: rgb(35, 13, 112)"
+                viewBox="0 0 16 16">
+                <path
+                  class="omh-path"
+                  fill-rule="evenodd"
+                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+              </svg>
+              Product Creation Form
+            </h1>
+            <form [formGroup]="addProductForm">
+              <div>
                 <div class="row">
                   <div class="col-md-6 mb-4">
-
                     <div class="form-outline">
-                      <input type="text" id="field1" placeholder="Product Name" [(ngModel)]="product.field1" formControlName="field1FormControl" class="form-control form-control-lg" />
+                      <input
+                        type="text"
+                        id="field1"
+                        placeholder="Product Name"
+                        [(ngModel)]="product.field1"
+                        formControlName="field1FormControl"
+                        class="form-control form-control-lg"/>
                       <label class="form-label" for="field1">Product Name</label>
                     </div>
-
                   </div>
                   <div class="col-md-6 mb-4">
-
                     <div class="form-outline">
-                      <input type="text" id="unitPrice" placeholder="Product Price" [(ngModel)]="product.unitPrice" formControlName="unitPriceFormControl" class="form-control form-control-lg" />
-                       <label class="form-label" for="unitPrice">Product Price</label>
+                      <input
+                        type="text"
+                        id="unitPrice"
+                        placeholder="Product Price"
+                        [(ngModel)]="product.unitPrice"
+                        formControlName="unitPriceFormControl"
+                        class="form-control form-control-lg"/>
+                      <label class="form-label" for="unitPrice">Product Price</label>
                     </div>
-
                   </div>
                 </div>
 
                 <div class="row">
                   <div class="col-md-6 mb-4 d-flex align-items-center">
-
                     <div class="form-outline datepicker w-100">
-                      <input type="file" accept="image/*"  id="image" (change)="onFileSelected($event)" [(ngModel)]="product.image" formControlName="imageFormControl" class="form-control form-control-lg" />
+                      <input
+                        type="file"
+                        accept="image/*"
+                        id="image"
+                        (change)="onFileSelected($event)"
+                        [(ngModel)]="product.image"
+                        formControlName="imageFormControl"
+                        class="form-control form-control-lg"/>
                       <label for="image" class="form-label">Product Image</label>
                     </div>
-
-
-
-
                   </div>
 
                   <div class="col-md-6 mb-4 d-flex align-items-center row">
                     <div class="form-outline datepicker w-100">
-                      <select class="form-select form-select-lg mb-1" aria-label=".form-select-lg example" [(ngModel)]="selectedCategory"  formControlName="selectedCategoryFormControl"  (change)="onSelectCategory($event)" >
-                        <option *ngFor="let category of categoryList$ | async" [value]="category.productCategoriesID">{{ category.field1 }}</option>
+                      <select
+                        class="form-select form-select-lg mb-1"
+                        aria-label=".form-select-lg example"
+                        [(ngModel)]="selectedCategory"
+                        formControlName="selectedCategoryFormControl"
+                        (change)="onSelectCategory($event)">
+                        <option
+                          *ngFor="let category of categoryList$ | async"
+                          [value]="category.productCategoriesID">
+                          {{ category.field1 }}
+                        </option>
                       </select>
-                    <label class="form-label">Product Category</label>
+                      <label class="form-label">Product Category</label>
+                    </div>
                   </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input
+                      type="text"
+                      id="field2"
+                      placeholder="description"
+                      [(ngModel)]="product.field2"
+                      formControlName="field2FormControl"
+                      class="form-control form-control-lg"/>
+                    <label class="form-label" for="field2">Product Description</label>
+                  </div>
+                </div>
               </div>
 
-                  </div>
-
-
-                  <div class="col-md-6 mb-4">
-
-                    <div class="form-outline">
-                      <input type="text" id="field2" placeholder="description" [(ngModel)]="product.field2" formControlName="field2FormControl" class="form-control form-control-lg" />
-                      <label class="form-label" for="field2">Product Description</label>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="mt-4 pt-2">
-                  <button class="btn" (click)="onAddProduct()" [disabled]="addProductForm.invalid">Aggiungi Prodotto</button>
-                </div>
-
-              </form>
-            </div>
+              <div class="mt-4 pt-2">
+                <button
+                  class="btn"
+                  (click)="onAddProduct()"
+                  [disabled]="addProductForm.invalid">
+                  Aggiungi Prodotto
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-
-
-
-
+  </div>
+</section>

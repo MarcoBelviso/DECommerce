@@ -1,0 +1,26 @@
+.omh-svg:hover .omh-path {
+  fill: #292929
+}
+
+.header{
+  background-image: linear-gradient(to right, rgb(18, 141, 179),rgb(25, 66, 199),  purple , rgb(25, 66, 199), rgb(18, 141, 179) );
+  color: white;
+}
+
+.act{
+  background-color: rgba(0,0,0,0.5);
+
+}
+
+.dropdown-menu{
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+}
+
+.dropdown-item{
+  color: white;
+  }
+
+.dropdown-item:hover{
+  background-color: rgba(0,0,0,0.5);
+}

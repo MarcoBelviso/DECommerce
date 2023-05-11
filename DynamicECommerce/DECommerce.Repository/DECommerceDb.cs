@@ -24,7 +24,7 @@ namespace DECommerce.Repository
         public DbSet<ProductCategories> ProductCategories { get; set; }
         public DbSet<Orders> Orders { get; set; }
         public DbSet<OrderDetails> OrderDetails { get; set; }
-
+        public DbSet<Configurations> Configurations { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -32,19 +32,29 @@ namespace DECommerce.Repository
                 WithMany(x => x.UserRole).HasForeignKey(x => x.UserID);
 
             modelBuilder.Entity<UserRole>().HasOne(x => x.Roles).
-                 WithMany(x => x.UserRole).HasForeignKey(x => x.RoleID);
+                WithMany(x => x.UserRole).HasForeignKey(x => x.RoleID);
 
-            modelBuilder.Entity<Products>().HasMany(x => x.OrderDetails).
-                 WithOne(x => x.Products).HasForeignKey(x => x.OrderDetailsID);
-
-            modelBuilder.Entity<Products>().HasOne(x => x.ProductCategories).
-                 WithMany(x => x.Products).HasForeignKey(x => x.ProductCategoriesID);
-
-            modelBuilder.Entity<Orders>().HasMany(x => x.OrderDetails).
-                 WithOne(x => x.Orders).HasForeignKey(x => x.OrderDetailsID);
+            //modelBuilder.Entity<Users>().HasMany(x => x.Orders).
+            //    WithOne(x => x.Users).HasForeignKey(x => x.UserID);
 
             modelBuilder.Entity<Orders>().HasOne(x => x.Users).
-                 WithMany(x => x.Orders).HasForeignKey(x => x.UserID);
+                WithMany(x => x.Orders).HasForeignKey(x => x.UserID);
+
+            modelBuilder.Entity<Orders>().HasMany(x => x.OrderDetails).
+                WithOne(x => x.Orders).HasForeignKey(x => x.OrderID);//OrderID
+
+            modelBuilder.Entity<OrderDetails>().HasOne(x => x.Orders).
+                WithMany(x => x.OrderDetails).HasForeignKey(x => x.OrderID);
+
+            modelBuilder.Entity<OrderDetails>().HasOne(x => x.Products).
+                WithMany(x => x.OrderDetails).HasForeignKey(x => x.ProductID);
+
+
+            //modelBuilder.Entity<Products>().HasMany(x => x.OrderDetails).
+            //    WithOne(x => x.Products).HasForeignKey(x => x.OrderDetailsID);//ProductID
+
+            modelBuilder.Entity<Products>().HasOne(x => x.ProductCategories).
+                WithMany(x => x.Products).HasForeignKey(x => x.ProductCategoriesID);
 
 
         }

@@ -1,0 +1,12 @@
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\Configuration.Repository\bin\Debug\net6.0\DECommerce.Configuration.Models.deps.json
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\Configuration.Repository\bin\Debug\net6.0\DECommerce.Configuration.Models.dll
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\Configuration.Repository\bin\Debug\net6.0\DECommerce.Configuration.Models.pdb
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\Configuration.Repository\obj\Debug\net6.0\DECommerce.Configuration.Models.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\Configuration.Repository\obj\Debug\net6.0\DECommerce.Configuration.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\Configuration.Repository\obj\Debug\net6.0\DECommerce.Configuration.Models.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\Configuration.Repository\obj\Debug\net6.0\DECommerce.Configuration.Models.AssemblyInfo.cs
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\Configuration.Repository\obj\Debug\net6.0\DECommerce.Configuration.Models.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\Configuration.Repository\obj\Debug\net6.0\DECommerce.Configuration.Models.dll
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\Configuration.Repository\obj\Debug\net6.0\refint\DECommerce.Configuration.Models.dll
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\Configuration.Repository\obj\Debug\net6.0\DECommerce.Configuration.Models.pdb
+C:\Users\admin\Desktop\DECommerce\DynamicECommerce\Configuration.Repository\obj\Debug\net6.0\ref\DECommerce.Configuration.Models.dll

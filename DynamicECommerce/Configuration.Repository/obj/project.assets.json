@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\Configuration.Repository\\DECommerce.Configuration.Repository.csproj",
-      "projectName": "DECommerce.Configuration.Repository",
-      "projectPath": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\Configuration.Repository\\DECommerce.Configuration.Repository.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\Configuration.Repository\\DECommerce.Configuration.Models.csproj",
+      "projectName": "DECommerce.Configuration.Models",
+      "projectPath": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\Configuration.Repository\\DECommerce.Configuration.Models.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\Configuration.Repository\\obj\\",
       "projectStyle": "PackageReference",

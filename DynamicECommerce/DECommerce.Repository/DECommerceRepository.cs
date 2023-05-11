@@ -196,13 +196,13 @@ namespace DECommerce.Repository
 
         //------------------------------Orders-----------------------------//
 
-        bool IDECommerceRepository.CreateOrders(Orders orders)
+        int IDECommerceRepository.CreateOrders(Orders orders)
         {
             bool results = false;
 
             _model.Orders.Add(orders);
             results = _model.SaveChanges() > 0;
-            return results;
+            return orders.OrderID;
         }
 
         List<Orders> IDECommerceRepository.GetOrders()
@@ -247,6 +247,15 @@ namespace DECommerce.Repository
             orderDetails = _model.OrderDetails.ToList();
             return orderDetails;
         }
+
+        bool IDECommerceRepository.CreateOrderDetail(OrderDetails orderDetail)
+        {
+            bool results = false;
+
+            _model.OrderDetails.Add(orderDetail);
+            results = _model.SaveChanges() > 0;
+            return results;
+        }
         List<OrderDetails> IDECommerceRepository.GetOrderDetailsByOrderID(int OrderID)
         {
             List<OrderDetails> orderDetails = new List<OrderDetails>();
@@ -260,5 +269,10 @@ namespace DECommerce.Repository
             return orderDetails;
         }
 
+        Configurations IDECommerceRepository.GetConfiguration()
+        {
+            Configurations configuration = _model.Configurations.FirstOrDefault();
+            return configuration;
+        }
     }
 }

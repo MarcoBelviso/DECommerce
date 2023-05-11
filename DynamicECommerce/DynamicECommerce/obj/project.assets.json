@@ -1318,6 +1318,16 @@
           }
         }
       },
+      "DECommerce.Configuration.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DECommerce.Configuration.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DECommerce.Configuration.Models.dll": {}
+        }
+      },
       "DECommerce.Interfaces/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -4071,6 +4081,11 @@
         "version.txt"
       ]
     },
+    "DECommerce.Configuration.Models/1.0.0": {
+      "type": "project",
+      "path": "../DECommerce.Configuration.Models/DECommerce.Configuration.Models.csproj",
+      "msbuildProject": "../DECommerce.Configuration.Models/DECommerce.Configuration.Models.csproj"
+    },
     "DECommerce.Interfaces/1.0.0": {
       "type": "project",
       "path": "../DECommerce.Interfaces/DECommerce.Interfaces.csproj",
@@ -4089,6 +4104,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "DECommerce.Configuration.Models >= 1.0.0",
       "DECommerce.Interfaces >= 1.0.0",
       "DECommerce.Models >= 1.0.0",
       "DECommerce.Repository >= 1.0.0",
@@ -4122,6 +4138,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Configuration.Models\\DECommerce.Configuration.Models.csproj": {
+              "projectPath": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Configuration.Models\\DECommerce.Configuration.Models.csproj"
+            },
             "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Interfaces\\DECommerce.Interfaces.csproj": {
               "projectPath": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\DECommerce.Interfaces\\DECommerce.Interfaces.csproj"
             },

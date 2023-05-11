@@ -1,0 +1,254 @@
+{
+    "Pages": [
+      {
+        "Name": "HomeComponent",
+        "Fields": [
+          {
+            "Name": "ImageValue",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "UnitPrice",
+            "IsVisible": true,
+            "Text": "Price"
+          },
+          {
+            "Name": "Field1",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field2",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field3",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field4",
+            "IsVisible": true,
+            "Text": ""
+          }
+        ]
+      },
+      {
+        "Name": "CatalogComponent",
+        "Fields": [
+          {
+            "Name": "ImageValue",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "UnitPrice",
+            "IsVisible": true,
+            "Text": "Price"
+          },
+          {
+            "Name": "Field1",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field2",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field3",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field4",
+            "IsVisible": true,
+            "Text": ""
+          }
+    ]
+},
+    {
+        "Name": "CheckoutComponent",
+        "Fields": [
+          {
+            "Name": "ImageValue",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "UnitPrice",
+            "IsVisible": true,
+            "Text": "Price"
+          },
+          {
+            "Name": "Field1",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field2",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field3",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field4",
+            "IsVisible": true,
+            "Text": ""
+          }
+        ]
+    },
+    {
+        "Name": "ProfileComponent",
+        "Fields": [
+          {
+            "Name": "Name",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Surname",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Username",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Password",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field1",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field2",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field3",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field4",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field5",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field6",
+            "IsVisible": true,
+            "Text": ""
+          }
+        ]
+      },
+      {
+        "Name": "ProductDetailComponent",
+        "Fields": [
+          {
+            "Name": "ImageValue",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "UnitPrice",
+            "IsVisible": true,
+            "Text": "Price"
+          },
+          {
+            "Name": "Field1",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field2",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field3",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field4",
+            "IsVisible": true,
+            "Text": ""
+          }
+        ]
+      },
+      {
+        "Name": "ProductsComponent",
+        "Fields": [
+          {
+            "Name": "ImageValue",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "UnitPrice",
+            "IsVisible": true,
+            "Text": "Price"
+          },
+          {
+            "Name": "Field1",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field2",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field3",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field4",
+            "IsVisible": true,
+            "Text": ""
+          }
+        ]
+      },
+      {
+        "Name": "CategoryComponent",
+        "Fields": [
+          {
+            "Name": "Field1",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field2",
+            "IsVisible": true,
+            "Text": ""
+          },
+          {
+            "Name": "Field3",
+            "IsVisible": true,
+            "Text": ""
+          }
+        ]
+      }
+    ]
+    }

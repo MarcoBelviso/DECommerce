@@ -18,7 +18,7 @@ namespace DynamicECommerce.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Orders>> CreateProductCategories(Orders orders)
+        public async Task<ActionResult<Orders>> CreateOrders(Orders orders)
         {
             ActionResult result = null;
             try
@@ -29,9 +29,10 @@ namespace DynamicECommerce.Controllers
                 }
                 else
                 {
-                    if (_idecommerceRepository.CreateOrders(orders))
+                    int orderID = _idecommerceRepository.CreateOrders(orders);
+                    if (orderID > 0)
                     {
-                        result = Ok();
+                        result = Ok(orderID);
                     }
                     else
                     {

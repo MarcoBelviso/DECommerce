@@ -1,4 +1,5 @@
 export class Products {
+  public productID!:string
   public productCategoriesId! : string
   public unitPrice! : string
   public image! : string

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Nsy0S5YSjeUOeJRADAgv8oj75CygCtxsKNcAJ3IRVyUo6WPMCz068kXvkBPTCcDC1mswTKVxQXbHR+y4b+rHvQ==",
+  "dgSpecHash": "O1nEDwneNdsKOlo/n9Q8pbZF0cViWBbNJydTEJ93qb6gFhDTpJGs/YtDLVrNIsxOrDAUqUJSu5gTdeR/qKd8xQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\Configuration.Repository\\DECommerce.Configuration.Repository.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\DECommerce\\DynamicECommerce\\Configuration.Repository\\DECommerce.Configuration.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,4 +1,5 @@
-﻿using DECommerce.Models;
+﻿
+using DECommerce.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,7 +48,7 @@ namespace DECommerce.Interfaces
 
         //Orders
 
-        bool CreateOrders(Orders orders);
+        int CreateOrders(Orders orders);
         List<Orders> GetOrders();
         Orders GetOrdersByID(int OrdersID);
         List<Orders> GetOrdersByUserID();
@@ -58,6 +59,10 @@ namespace DECommerce.Interfaces
         List<OrderDetails> GetOrderDetails();
         List<OrderDetails> GetOrderDetailsByOrderID(int OrderID);
         OrderDetails GetOrderDetailsByID(int OrderDetailsID);
+        bool CreateOrderDetail(OrderDetails orderDetail);
+
+
+        Configurations GetConfiguration();
     }
 
      

@@ -18,6 +18,10 @@ import { ProductsComponent } from './components/products/products/products.compo
 import { CatalogComponent } from './components/catalog/catalog/catalog.component';
 import { CartComponent } from './components/cart/cart/cart.component';
 import { CategoryComponent } from './components/category/category/category.component';
+import { ProfileComponent } from './components/users/customer/profile/profile.component';
+import { ProductDetailComponent } from './components/products/product-detail/product-detail.component';
+import { CheckoutComponent } from './components/cart/cart/checkout/checkout.component';
+import { OrderComponent } from './components/orders/order/order.component';
 
 
 @NgModule({
@@ -32,6 +36,10 @@ import { CategoryComponent } from './components/category/category/category.compo
     CatalogComponent,
     CartComponent,
     CategoryComponent,
+    ProfileComponent,
+    ProductDetailComponent,
+    CheckoutComponent,
+    OrderComponent,
 
   ],
   imports: [

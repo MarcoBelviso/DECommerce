@@ -1,0 +1,19 @@
+<h1>{{user?.name}}'s account details</h1>
+
+<table class="table table-striped">
+  <thead>
+    <th>Name</th>
+    <th>Surname</th>
+    <th>Username</th>
+    <th>Password</th>
+    <th>Birth date</th>
+  </thead>
+    <td>{{user?.name }}</td>
+    <td>{{user?.surname }}</td>
+    <td>{{user?.username }}</td>
+    <td>{{user?.password }}</td>
+    <td>{{user?.field3 }}</td>
+</table>
+<button class="btn btn-danger" routerLink="/customer/:id/order">Vedi tutti i tuoi ordini</button>
+
+

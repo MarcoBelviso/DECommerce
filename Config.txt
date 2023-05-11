@@ -1,0 +1,24 @@
+{
+  "Pages": [
+    {
+      "Name": "CatalogComponent",
+      "Fields": [
+        {
+          "Name": "ImageValue",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "UnitPrice",
+          "IsVisible": true,
+          "Text": "Price"
+        },
+        {
+          "Name": "Field1",
+          "IsVisible": true,
+          "Text": ""
+        }
+      ]
+    }
+  ]
+}

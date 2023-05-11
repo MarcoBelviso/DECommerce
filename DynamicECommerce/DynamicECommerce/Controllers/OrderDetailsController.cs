@@ -17,6 +17,37 @@ namespace DynamicECommerce.Controllers
             _idecommerceRepository = idecommerceRepository;
         }
 
+        [HttpPost]
+        public async Task<ActionResult<OrderDetails>> CreateOrderDetail(OrderDetails orderDetail)
+        {
+            ActionResult result = null;
+            try
+            {
+                if (orderDetail == null)
+                {
+                    result = BadRequest();
+                }
+                else
+                {
+                    if (_idecommerceRepository.CreateOrderDetail(orderDetail))
+                    {
+                        result = Ok();
+                    }
+                    else
+                    {
+                        result = StatusCode(StatusCodes.Status500InternalServerError);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                result = StatusCode(StatusCodes.Status500InternalServerError,
+                    $"Error getting users {ex.Message}");
+            }
+
+            return result;
+        }
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<OrderDetails>>> Get()
         {

@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DECommerce.Models", "DEComm
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DECommerce.Interfaces", "DECommerce.Interfaces\DECommerce.Interfaces.csproj", "{80BB2641-9177-4F2C-8B30-3584C1622F5F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DECommerce.Configuration.Repository", "Configuration.Repository\DECommerce.Configuration.Repository.csproj", "{5FCDE5B2-DCBB-48E8-873A-E550FB738ACC}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wwwroot", "wwwroot", "{6F853E50-D6DA-4DB8-BDC0-1F434160B145}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Uploads", "Uploads", "{F3A8EE58-96BB-40B7-8A0F-E92625748257}"
@@ -20,6 +18,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{EC41683F-A290-4267-82F7-4F488B09028D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{FC28424C-7842-48CD-8869-09512787313F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DECommerce.Configuration.Models", "DECommerce.Configuration.Models\DECommerce.Configuration.Models.csproj", "{D30A11DA-47E5-4344-BD3F-91D8D13070AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,10 +43,10 @@ Global
 		{80BB2641-9177-4F2C-8B30-3584C1622F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80BB2641-9177-4F2C-8B30-3584C1622F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80BB2641-9177-4F2C-8B30-3584C1622F5F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5FCDE5B2-DCBB-48E8-873A-E550FB738ACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5FCDE5B2-DCBB-48E8-873A-E550FB738ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5FCDE5B2-DCBB-48E8-873A-E550FB738ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5FCDE5B2-DCBB-48E8-873A-E550FB738ACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D30A11DA-47E5-4344-BD3F-91D8D13070AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D30A11DA-47E5-4344-BD3F-91D8D13070AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D30A11DA-47E5-4344-BD3F-91D8D13070AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D30A11DA-47E5-4344-BD3F-91D8D13070AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

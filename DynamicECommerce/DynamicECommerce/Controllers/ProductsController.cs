@@ -104,6 +104,10 @@ namespace DynamicECommerce.Controllers
                         string imageSrc = Convert.ToBase64String(imageBytes);
                         product.Image = imageSrc;
                     }
+                    if (product.UnitPrice.ToString().Length == 4)
+                    {
+                        product.UnitPrice = Convert.ToDecimal(product.UnitPrice);
+                    }
                 }
 
                 result = Ok(products);

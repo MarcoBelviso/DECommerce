@@ -20,6 +20,18 @@ export class AuthService {
     return JSON.parse((localStorage.getItem('role')!));
   }
 
+
+
+  public setUser(userID : string) {
+    localStorage.setItem('userID', userID);
+  }
+
+  public getUser() {
+    return localStorage.getItem('userID')!;
+  }
+
+
+
   public setToken(jwtToken: string) {
     localStorage.setItem('token', jwtToken);
   }
@@ -35,10 +47,11 @@ export class AuthService {
   login(username : string, password : string): Observable<any> {
     const data = {username : username, password : password}
     return this.http.post(this.DECommerceApiService.DECommerceApiUrl + '/Auth/login' , data)
-
-
   }
 
+  public getUserID() {
+    return localStorage.getItem('userID')!;
+  }
 
   //----------------------------------------------------------//
 

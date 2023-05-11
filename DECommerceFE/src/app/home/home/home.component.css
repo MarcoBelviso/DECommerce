@@ -1,0 +1,13 @@
+.header{
+  background-color: #001dff;
+  opacity: 0.8;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001dff 40px ), repeating-linear-gradient( #00000055, #000000 );}
+.head{
+  background-color: rgba(0,0,0,0.5);
+}
+
+.card{
+border: none;
+
+color: white;
+}

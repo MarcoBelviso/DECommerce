@@ -1,7 +1,42 @@
-<div *ngFor="let product of products">
-  <p> {{product.field1}} </p>
-  <p> {{product.unitPrice}} </p>
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+          <div *ngFor="let product of products; index as i">
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img *ngIf="configurationService.isVisible(nameComponent,'ImageValue')" class="card-img-top" src="data:image/png;base64,{{product.image}}" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 *ngIf="configurationService.isVisible(nameComponent,'Field1')" class="fw-bolder">{{product.field1}}</h5>
+                            <!-- Product price-->
+                            <div *ngIf="configurationService.isVisible(nameComponent,'UnitPrice')">
+                            {{product.unitPrice| currency: 'EUR' }}
+                          </div>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent mx-2">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"
+                          routerLink="/productDetail/{{product.productID}}">View details</a>
 
-  <img src="data:image/png;base64,{{product.image}}">
+                          <button *ngIf="service.getRole() == 1" (click)="delete()" class="btn btn-outline-danger flex-shrink-0 mx-2" type="button">
+                            <i class="bi-cart-fill me-1"></i>
+                            delete
+                        </button>
+                        </div>
 
-  <p> {{product.field2}} </p>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+  </div>
+</section>
+<footer class="py-5 bg-dark">
+  <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+</footer>
+<!-- Bootstrap core JS-->
+

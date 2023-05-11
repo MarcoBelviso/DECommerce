@@ -34,15 +34,21 @@ export class LoginComponent implements OnInit {
       (response) => {
         this.AuthService.setRole(response.roleId); console.log(response.roleId)
         this.AuthService.setToken(response.token); console.log(response.token)
-        this.DEC.getUserId(response.id); console.log(response.id);
+        const userId = response.userID; // dichiara la variabile userId
+        console.log(userId); // controlla il valore dell'ID dell'utente nella risposta dell'API
+        this.AuthService.setUser(userId);
+        const storedUserId = this.AuthService.getUser();
+        console.log(storedUserId); // controlla il valore dell'ID dell'utente nella localStorage
+        console.log(response)
 
 
-        const userId = response.id
+        console.log(response)
+
         const role = response.roleId;
         if (role == '1') {
           this.router.navigate([`/admin/${userId}`]);
         } else {
-          this.router.navigate([`/customer/${userId}`]);
+          this.router.navigate([`/catalog/${userId}`]);
         }
 
       }
@@ -71,16 +77,9 @@ export class LoginComponent implements OnInit {
     this.showPassword = !this.showPassword;
   }
 
-  toggleLogin(){
-    this.nav.isLogged = !this.nav.isLogged
-    this.nav.admin = !this.nav.admin
-    this.nav.customer = !this.nav.customer
 
-  }
 
-  onClick(){
-    this.nav.admin = true
-  }
+
 
 
 
